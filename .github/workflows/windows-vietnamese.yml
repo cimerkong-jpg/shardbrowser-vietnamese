@@ -2,6 +2,9 @@ name: Build Vietnamese Windows installer
 
 on:
   workflow_dispatch:
+  push:
+    branches: [vietnamese]
+    paths: [.github/workflows/windows-vietnamese.yml]
 
 permissions:
   contents: read
